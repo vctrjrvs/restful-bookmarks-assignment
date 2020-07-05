@@ -1,4 +1,4 @@
-import React, { Component } from  'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import './BookmarkForm.css';
 
@@ -6,9 +6,9 @@ const Required = () => (
   <span className='BookmarkForm__required'>*</span>
 )
 
-const noop = () => {}
+const noop = () => { }
 
-class BookmarkForm extends Component {
+export default class BookmarkForm extends React.Component {
   static propTypes = {
     onSubmit: PropTypes.func,
     onCancel: PropTypes.func,
@@ -166,5 +166,3 @@ class BookmarkForm extends Component {
     );
   }
 }
-
-export default BookmarkForm;

@@ -7,7 +7,7 @@ it('renders without crashing', () => {
   const props = {
     match: { params: {} },
     history: {
-      push: () => {}
+      push: () => { }
     },
   }
   ReactDOM.render(<EditBookmark {...props} />, div);

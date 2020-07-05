@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Route } from 'react-router-dom';
 import AddBookmark from './AddBookmark/AddBookmark';
 import EditBookmark from './EditBookmark/EditBookmark';
@@ -8,7 +8,7 @@ import Nav from './Nav/Nav';
 import config from './config';
 import './App.css';
 
-class App extends Component {
+export default class App extends React.Component {
   state = {
     bookmarks: [],
     error: null,
@@ -23,7 +23,7 @@ class App extends Component {
 
   addBookmark = bookmark => {
     this.setState({
-      bookmarks: [ ...this.state.bookmarks, bookmark ],
+      bookmarks: [...this.state.bookmarks, bookmark],
     })
   }
 
@@ -97,5 +97,3 @@ class App extends Component {
     );
   }
 }
-
-export default App;

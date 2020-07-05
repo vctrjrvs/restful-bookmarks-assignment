@@ -1,10 +1,10 @@
-import React, { Component } from  'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import BookmarksContext from '../BookmarksContext';
 import config from '../config'
 import BookmarkForm from '../BookmarkForm/BookmarkForm'
 
-class EditBookmark extends Component {
+export default class EditBookmark extends React.Component {
   static propTypes = {
     match: PropTypes.shape({
       params: PropTypes.object,
@@ -102,5 +102,3 @@ class EditBookmark extends Component {
     );
   }
 }
-
-export default EditBookmark;

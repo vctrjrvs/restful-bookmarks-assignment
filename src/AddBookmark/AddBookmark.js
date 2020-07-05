@@ -1,10 +1,10 @@
-import React, { Component } from  'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import BookmarksContext from '../BookmarksContext';
 import config from '../config'
 import BookmarkForm from '../BookmarkForm/BookmarkForm'
 
-class AddBookmark extends Component {
+export default class AddBookmark extends React.Component {
   static propTypes = {
     history: PropTypes.shape({
       push: PropTypes.func,
@@ -62,5 +62,3 @@ class AddBookmark extends Component {
     );
   }
 }
-
-export default AddBookmark;

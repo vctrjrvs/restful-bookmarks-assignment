@@ -66,7 +66,7 @@ export default function BookmarkItem(props) {
 }
 
 BookmarkItem.defaultProps = {
-  onClickDelete: () => {},
+  onClickDelete: () => { },
 }
 
 BookmarkItem.propTypes = {
